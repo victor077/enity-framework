@@ -11,7 +11,7 @@ namespace CursoEFCore.Domain
 
         public int PedidoId { get; set; }
 
-        public Pedido Pedido { get; set; }
+        public Pedido? Pedido { get; set; }
 
         public Produto? Produto { get; set; }
 

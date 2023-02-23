@@ -26,6 +26,5 @@ namespace CursoEFCore.Domain
 
         public ICollection<PedidoItem>? Items {get; set;}
 
-
     }
 }
