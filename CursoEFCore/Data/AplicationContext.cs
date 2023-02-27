@@ -18,7 +18,8 @@ namespace CursoEFCore.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=CursoEFCore;Integrated Security=True").EnableDetailedErrors();
+           optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=CursoEFCore;Integrated Security=True;TrustServerCertificate=True;").EnableDetailedErrors();
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

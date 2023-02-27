@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CursoEFCore.Migrations
 {
     /// <inheritdoc />
-    public partial class PrimeiraMigracao : Migration
+    public partial class AjusteMigracoes : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,10 +18,11 @@ namespace CursoEFCore.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "VARCHAR(80)", nullable: false),
-                    CHAR11 = table.Column<string>(name: "CHAR(11)", type: "nvarchar(450)", nullable: true),
-                    CHAR8 = table.Column<string>(name: "CHAR(8)", type: "nvarchar(max)", nullable: false),
-                    CHAR2 = table.Column<string>(name: "CHAR(2)", type: "nvarchar(max)", nullable: false),
-                    Cidade = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false)
+                    Phone = table.Column<string>(type: "CHAR(11)", nullable: true),
+                    Cep = table.Column<string>(type: "CHAR(8)", nullable: false),
+                    Estado = table.Column<string>(type: "CHAR(2)", nullable: false),
+                    Cidade = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -100,7 +101,7 @@ namespace CursoEFCore.Migrations
             migrationBuilder.CreateIndex(
                 name: "idx_client_telefone",
                 table: "Clientes",
-                column: "CHAR(11)");
+                column: "Phone");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PedidoItens_PedidoId",

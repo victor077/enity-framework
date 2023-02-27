@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CursoEFCore.Migrations
 {
     [DbContext(typeof(AplicationContext))]
-    [Migration("20230223021100_PrimeiraMigracao")]
-    partial class PrimeiraMigracao
+    [Migration("20230227060216_AjusteMigracoes")]
+    partial class AjusteMigracoes
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,26 +35,27 @@ namespace CursoEFCore.Migrations
 
                     b.Property<string>("Cep")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("CHAR(8)");
+                        .HasColumnType("CHAR(8)");
 
                     b.Property<string>("Cidade")
                         .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Estado")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("CHAR(2)");
+                        .HasColumnType("CHAR(2)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("VARCHAR(80)");
 
                     b.Property<string>("Telefone")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("CHAR(11)");
+                        .HasColumnType("CHAR(11)")
+                        .HasColumnName("Phone");
 
                     b.HasKey("Id");
 
