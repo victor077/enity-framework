@@ -69,3 +69,8 @@ C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\
 C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\victo\OneDrive\Documentos\enity-framework\CursoEFCore\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
